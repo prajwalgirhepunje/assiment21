@@ -8,6 +8,12 @@
         body{
             background-color: #eeeee4;
         }
+        .text-center{
+            text-align: center;
+        }
+        .dashed-bottom{
+            border-bottom: 1px dashed gray;
+        }
         .recipt-container{
         width: 80%;
         border: 1px solid gray;
@@ -17,17 +23,13 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    .receipt-heade{
-        border-bottom: 1px dashed gray;
-    }
+  
     .brand-logo{
         width: 100px;
         display: block;
         margin:0 auto;
     }
-    .brand-title{
-        text-align: center;
-    }
+   
     .brand-addres{
         text-align: right;
     }
@@ -35,7 +37,6 @@
     text-align: right;
 }
 .recepit-title{
-    text-align: center;
     font-size: 30px;
     margin: 40px 0;
 }
@@ -46,7 +47,6 @@
 }
 .receipt-detial-value{
     font-weight: bold;
-    border-bottom: 1px dashed gray;
     width: 30%;
 }
 .receipt-detial{
@@ -64,49 +64,57 @@
     width: 200px;
     position: absolute;
     right:10px;
-    bottom: 20px;
+    bottom: 60px;
 }
 .receipt-body{
     position: relative;
+   
+
+}
+.receipt-footer{
+    padding: 20px 0;
+    font-size: 20px;
+    background-color: #ffca39;
 }
     </style>
 </head>
 <body>
     <div class="recipt-container">
-        <div class="receipt-header">
+        <div class="receipt-header dashed-bottom">
             <img src="logo.png" class="brand-logo">
-            <h2 class="brand-title">road to coad</h2>
+            <h2 class="text-center">road to coad</h2>
             <p class="brand-addres">404,above lotus hospital, <br>shewalewadi/<br> pune-412307</p>
             <p class="brand-mobail">+91-7387698670</p>
         </div>
-    <hr/>
 
-<div class="receipt-body">
-<h3 class="recepit-title">payment receipt</h3>
+<div class="receipt-body dashed-bottom">
+<h3 class="recepit-title text-center">payment receipt</h3>
 
 <div class="receipt-detial">
     <div class="receipt-detial-key">payment no:</div>
-    <div class="receipt-detial-value">12345678</div>
+    <div class="receipt-detial-value dashed-bottom ">12345678</div>
     
 </div>
 <div class="receipt-detial">
     <div class="receipt-detial-key">payment date</div>
-    <div class="receipt-detial-value">24/05/24</div>
+    <div class="receipt-detial-value dashed-bottom">24/05/24</div>
     
 </div>
 <div class="receipt-detial">
     <div class="receipt-detial-key">amount:</div>
-    <div class="receipt-detial-value">4000/-</div>
+    <div class="receipt-detial-value dashed-bottom">4000/-</div>
     
 </div>
 <div class="receipt-detial">
     <div class="receipt-detial-key">payment mode:</div>
-    <div class="receipt-detial-value">upi</div>
+    <div class="receipt-detial-value dashed-bottom">upi</div>
 </div><img src="./stamp.png" class="stamp">
-<p class="accountant-signiture">accountant signiture</p>
+<p class="accountant-signiture">accountant signiture <br><br><br></p>
 </div>
-
-<div class="receipt-footer"></div>
+<p>this is a computer gentarer receipt and dose not reqire any signiture</p>
+<div class="receipt-footer text-center">
+thank you for your payment
+</div>
 </div>
 </body>
 </html>
