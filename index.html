@@ -41,6 +41,7 @@
 }
 .receipt-detial-key{
     color: gray;
+    width: 30%;
 
 }
 .receipt-detial-value{
@@ -50,10 +51,23 @@
 }
 .receipt-detial{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 20px;
     margin: 20px 0;
 
+}
+.accountant-signiture{
+    text-align: right;
+    margin-top: 100px;
+}
+.stamp{
+    width: 200px;
+    position: absolute;
+    right:10px;
+    bottom: 20px;
+}
+.receipt-body{
+    position: relative;
 }
     </style>
 </head>
@@ -88,10 +102,10 @@
 <div class="receipt-detial">
     <div class="receipt-detial-key">payment mode:</div>
     <div class="receipt-detial-value">upi</div>
-    
+</div><img src="./stamp.png" class="stamp">
+<p class="accountant-signiture">accountant signiture</p>
 </div>
-<
-</div>
+
 <div class="receipt-footer"></div>
 </div>
 </body>
